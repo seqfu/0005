@@ -1,0 +1,9 @@
+.DS_Store
+.0
+*.zip
+jar
+hello.json
+cromwell-executions
+cromwell-workflow-logs
+gatk-*
+venv
