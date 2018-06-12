@@ -1,3 +1,6 @@
 #!/bin/bash
 
-echo "I have committed."
+git checkout gh-pages
+git log -1 | head -1 > index.html
+git commit -a
+git checkout master
