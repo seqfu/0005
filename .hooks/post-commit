@@ -1,6 +1,11 @@
 #!/bin/bash
 
+branch=$(git status|head -1|sed 's/On branch //')
+
 git checkout gh-pages
+
 git log -1 | head -1 > index.html
-git commit -a
-git checkout master
+
+git commit -a -m "post-commit update from $branch"
+
+git checkout $branch
