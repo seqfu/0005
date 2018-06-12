@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln -s .hooks/* .git/hooks
+(cd .git/hooks && ln -s ../../.hooks/* .)
